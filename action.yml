@@ -13,7 +13,6 @@ runs:
   args:
     - -c
     - ${{ inputs.config }}
-    - --coverage-text
 
 branding:
   icon: 'check-square'
