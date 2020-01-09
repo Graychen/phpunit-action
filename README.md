@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: graychen/phpunit@v1.0.0
+    - uses: graychen/phpunit-action@v1.0.0
     # ... then your own project steps ...
 Inputs
 The following configuration options are available:
@@ -30,7 +30,7 @@ jobs:
     ...
 
     - name: PHPUnit tests
-      uses: graychen/phpunit@v1.0.0
+      uses: graychen/phpunit-action@v1.0.0
       with:
         config: custom/path/to/phpunit.xml
 If you require other configurations of phpunit, please request them in the Github issue tracker
