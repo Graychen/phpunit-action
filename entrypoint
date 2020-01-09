@@ -1,0 +1,5 @@
+#!/bin/bash
+composer install --prefer-dist
+set -e
+PATH=/tmp/vendor/bin:$PATH
+phpunit "$@"

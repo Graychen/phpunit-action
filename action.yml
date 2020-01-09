@@ -1,0 +1,20 @@
+name: PHPUnit (graychen)
+description: Run your PHPUnit tests in your Github Actions.
+
+inputs:
+  config:
+    description: Configuration file location
+    required: false
+    default: phpunit.xml.dist
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - -c
+    - ${{ inputs.config }}
+    - --coverage-text
+
+branding:
+  icon: 'check-square'
+  color: 'purple'
